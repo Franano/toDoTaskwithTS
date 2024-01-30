@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Tasks_1 = require("./Tasks");
+const task1 = { id: 1, title: 'Task 1', done: true };
+const updatedTask = { id: 1, title: 'Task 2', done: false };
+(0, Tasks_1.createTask)(task1);
+console.log((0, Tasks_1.readAllTask)());
+(0, Tasks_1.updateTask)(1, 'Task 2', false);
+//console.log(readOneTask());
+console.log((0, Tasks_1.readAllTask)());
+(0, Tasks_1.deleteTask)(1);
+console.log((0, Tasks_1.readAllTask)());
